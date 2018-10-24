@@ -16,6 +16,6 @@ suite=unittest.TestLoader().discover('testsuites',pattern='test*.py')
 
 if __name__ == '__main__':
 
-    runner=HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'WEB UI 自动化测试报告，测试结果如下',)
+    runner=HTMLTestRunner.HTMLTestRunner(stream=fp,title='WEB UI 自动化测试报告，测试结果如下',)
     runner.run(suite)
     fp.close()

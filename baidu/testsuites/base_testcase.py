@@ -1,5 +1,5 @@
 from selenium import webdriver
-from  luntan.framework.browser_engine import BrowserEngine
+from  baidu.framework.browser_engine import BrowserEngine
 import unittest
 import time
 
@@ -8,6 +8,9 @@ import time
 class BaseTestCase(unittest.TestCase):
 
     def setUp(self):#测试提前准备工作
+        # self.driver=webdriver.Chrome('../tools/chromedriver.exe')
+        # self.driver.implicitly_wait(5)
+        # self.driver.get('http://baidu.com')
         browser=BrowserEngine()
         self.driver=browser.open_browser()
 

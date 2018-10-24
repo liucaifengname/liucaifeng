@@ -2,7 +2,7 @@
 import os.path
 from configparser import ConfigParser
 from  selenium import webdriver
-from luntan.framework.logger import  Logger
+from baidu.framework.logger import  Logger
 
 
 
@@ -32,15 +32,14 @@ class BrowserEngine(object):
         driver.get(url)
         logger.info('Open url :%s'% url)
         driver.maximize_window()
-        logger.info('maximize the current window.窗口最大化')
+        logger.info('maximize the current window.')
         driver.implicitly_wait(10)
-        logger.info('Set implicitly wait 10 seconds.隐式等待10秒')
+        logger.info('Set implicitly wait 10 seconds.')
         return driver
 
     def quit_browser(self):
-        self.driver.quit()
         logger.info('Now,Close and quit the browser.')
-
+        self.driver.quit()
 
 
 
