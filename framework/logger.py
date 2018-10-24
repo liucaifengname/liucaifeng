@@ -11,9 +11,9 @@ class Logger(object):
         self.logger.setLevel(logging.DEBUG)
 
         #创建一个handler
-        rq=time.strftime('%Y%m%d%H%M',time.localtime(time.time()))
+        # rq=time.strftime('%Y%m%d%H%M',time.localtime(time.time()))
         log_path=os.path.dirname(os.path.abspath('.')) + '/logs/'
-        log_name=log_path + rq + '.log'
+        log_name=log_path  + '.log'
         fh=logging.FileHandler(log_name)
         fh.setLevel(logging.INFO)
 

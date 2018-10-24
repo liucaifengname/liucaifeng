@@ -5,9 +5,9 @@ import time
 
 
 report_path=os.path.dirname(os.path.abspath('.'))+'./test_report/'
-# now=time.strftime('%Y%m%d%H%M',time.localtime(time.time()))
-# HtmlFile=report_path + now + '_result.html'
-HtmlFile=report_path + '_result.html'
+now=time.strftime('%Y%m%d%H%M',time.localtime(time.time()))
+HtmlFile=report_path + now + '_result.html'
+# HtmlFile=report_path + '_result.html'
 
 
 fp=open(HtmlFile,'wb')
